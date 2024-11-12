@@ -20,13 +20,25 @@ This project is a basic **Online Examination System** built with PHP, MySQL, HTM
 ```bash
 git clone [https://github.com/your-username/online-exam-system.git](https://github.com/Chowdhurynaseeh/online-examination-system)
 cd online-examination-system
-\\\
+```
 
 ### 2. Configure the Database
 Create a MySQL database. You can name it online_exam_system.
 Import the database.sql file in the sql/ directory to create tables.
 Update the database configuration in config.php with your MySQL credentials.
-
+// config.php
+```
+<?php
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'your_username');
+define('DB_PASSWORD', 'your_password');
+define('DB_DATABASE', 'online_exam_system');
+$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+```
 
 ### 3. Run the Project
 Start your local server (e.g., Apache or XAMPP).
@@ -103,15 +115,3 @@ Stores user exam results with the following columns:
 - Implement time limits for exams.
 - Add a feedback system for exam reviews.
 
-### Change These : 
-// config.php
-<?php
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'your_username');
-define('DB_PASSWORD', 'your_password');
-define('DB_DATABASE', 'online_exam_system');
-$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-?>
