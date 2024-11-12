@@ -19,7 +19,7 @@ This project is a basic **Online Examination System** built with PHP, MySQL, HTM
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/your-username/online-exam-system.git](https://github.com/Chowdhurynaseeh/online-examination-system)
-cd online-examination-system
+cd online-examination-system ```
 
 ### 2. Configure the Database
 Create a MySQL database. You can name it online_exam_system.
