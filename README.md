@@ -1,7 +1,9 @@
 # Online Examination System
 
 This project is a basic **Online Examination System** built with PHP, MySQL, HTML, and CSS. It allows an administrator to create and manage exams and users to take those exams. This system is intended as a foundational project for learning web development concepts, and it can be expanded with additional features as needed.
-![image](https://github.com/user-attachments/assets/d85d1f43-1926-4bff-ad3a-fae356f21f94)
+
+![image](https://github.com/user-attachments/assets/a929e3cd-c84b-497b-a310-8c9720b29653)
+
 
 ## Features
 - **Admin Panel**: Allows the admin to create, update, delete exams and questions.
